@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Verification</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Code Verification Tool</h1>
+        <form id="taskForm">
+            <label for="task">Task:</label>
+            <input type="text" id="task" name="task" placeholder="Enter task title" required>
+            
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" placeholder="Enter task description" required></textarea>
+            
+            <label for="codeFile">Upload Code File:</label>
+            <input type="file" id="codeFile" name="codeFile" accept="*/*" required>
+            
+            <button type="submit">Verify Code</button>
+        </form>
+    </div>
+    <div id="spinner" class="spinner hidden"></div>
+    <html><div id="output"></div></html>
+    <script src="script.js"></script>
+</body>
+</html>
